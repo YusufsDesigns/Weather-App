@@ -16,9 +16,9 @@ Its an app that uses a weather API with access to over 200,000 cities current we
 
 ### Useful resources
 
-- [resource 1](https://rapidapi.com/hub) - Get tons of free and premium API's.
-- [resource 2](https://www.pexels.com/) - Get tons of free stock images.
-- [resource 3](https://unsplash.com/) - Get tons of free stock images.
+- [Rapidapi](https://rapidapi.com/hub) - Get tons of free and premium API's.
+- [Pexels](https://www.pexels.com/) - Get tons of free stock images.
+- [Unsplash](https://unsplash.com/) - Get tons of free stock images.
 
 ## Author
 - Twitter - [@yusuf_Designs](https://twitter.com/yusuf_Designs)

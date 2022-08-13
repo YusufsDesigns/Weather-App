@@ -10,9 +10,7 @@ Its an app that uses a weather API with access to over 200,000 cities current we
 ![](./screenshots/screenshot4.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [ live site ](https://weather-app-yusufsdesigns.vercel.app/)
 
 ### Useful resources
 

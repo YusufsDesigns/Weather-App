@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="overlay">
+            <div class="container">
+                <h4>The Weather</h4>
+                <div class="weather-body">
+                    <div id="w-temp" class="temperature"></div>
+                    <div class="date-block">
+                        <h1 id="w-city" class="city"></h1>
+                        <small class="date">
+                            <span id="w-time"></span> -
+                            <span class="w-inner-date"></span>
+                        </small>
+                    </div>
+                    <div class="weather-block">
+                        <img alt="" id="w-icon" width="50px" height="50px">
+                        <small id="w-condition"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <form id="get-city" class="form">
+                    <input type="text" placeholder="Another City" id="city-name">
+                    <button type="submit" class="city-btn"><i class="fa-solid fa-magnifying-glass "></i></button>
+                </form>
+                <ul class="cities">
+                    <li>Abuja</li>
+                    <li>Paris</li>
+                    <li>Tokyo</li>
+                    <li>New York</li>
+                </ul>
+                <ul class="details">
+                    <li>
+                        <span class="detail-name">Cloudy</span>
+                        <span id="w-cloud"></span>
+                    </li>
+                    <li>
+                        <span class="detail-name">Humidity</span>
+                        <span id="w-humidity"></span>
+                    </li>
+                    <li>
+                        <span class="detail-name">Wind</span>
+                        <span id="w-wind"></span>
+                    </li>
+                    <li>
+                        <span class="detail-name">Gust</span>
+                        <span id="w-gust"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/storage.js"></script>
+    <script src="/weather.js"></script>
+    <script src="/ui.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

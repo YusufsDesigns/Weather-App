@@ -1,3 +1,4 @@
+// UI Object
 class UI{
     constructor(){
         this.temp = document.getElementById('w-temp');

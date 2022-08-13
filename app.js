@@ -165,5 +165,8 @@ function getWeather(){
             }
         }
     })
+    .catch(() => {
+        alert('City not found')
+    })
 }
 

@@ -166,7 +166,7 @@ function getWeather(){
         }
     })
     .catch(() => {
-        alert('City not found')
+        ui.showAlert('City not found')
     })
 }
 

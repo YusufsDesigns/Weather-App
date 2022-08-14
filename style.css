@@ -39,20 +39,21 @@ code, pre{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
     transition: 500ms;
 }
 
 .wrapper .overlay{
+    position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper .container{
     padding: 3rem 4rem;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,7 +87,7 @@ code, pre{
 .weather-body .weather-block{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* Panel */
@@ -162,13 +163,45 @@ code, pre{
     justify-content: space-between;
 }
 
+/* Alert Box */
+.alert{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 20px;
+    left: 45%;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    opacity: 0;
+    animation-name: alert;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes alert{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 @media(max-width:760px){
     .wrapper{
         width: 100%;
-        height: 100%;
     }
 
     .wrapper .container{
+        min-height: 20vh;
         padding: 3rem 2rem;
         color: #fff;
         display: flex;
@@ -199,7 +232,7 @@ code, pre{
     .panel{
         position: relative;
         width: 100%;
-        height: 80vh;
+        min-height: 100vh;
         padding: 2.5rem 1.5rem;
         font-size: 12px;
     }
@@ -215,6 +248,22 @@ code, pre{
         width: 50px;
         height: 80px;
         line-height: 80px;
+    }
+
+    .alert{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        line-height: 50px;
+        font-size: 15px;
     }
 
         /* width */

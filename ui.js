@@ -25,9 +25,19 @@ class UI{
         const y = parseInt(date.substr(0, 4));
         const m = parseInt(date.substr(5, 2));
         const d = parseInt(date.substr(8, 2));
-        const hour = date.substr(11, 2);
-        const minute = date.substr(14, 2);
-        document.getElementById("w-time").innerHTML = `${hour}:${minute}`;
+        const time = date.substr(11);
+        document.getElementById("w-time").innerHTML = time;
         document.querySelector(".w-inner-date").innerHTML = ` ${d}, ${m} ${y}`;
+    }
+
+    showAlert(msg){
+        const alert = document.querySelector('.alert');
+        alert.style.display = 'block';
+        alert.style.opacity = '1';
+        alert.textContent = msg;
+        setTimeout(() => {
+            alert.style.display = 'none';
+            alert.style.opacity = '0';
+        }, 3000);
     }
 }
